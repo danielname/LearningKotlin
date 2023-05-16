@@ -63,6 +63,29 @@ fun randomMonth(){
     }
 }
 
+//loops
+//while and do while are the same
+//for is like python
+
+fun arrays(){
+    val arrayOfDoubles = DoubleArray(10)
+    for (n in 0..9)
+        arrayOfDoubles[n] = Math.random()
+    var average = 0.0
+    for (value in arrayOfDoubles) {
+        println(value)
+        average += value
+    }
+    average /= 10
+    for (value in arrayOfDoubles)
+        if (value > average){
+            println("Higher")
+        } else {
+            println("Lower")
+        }
+
+}
+
 fun main(args: Array<String>) {
     val x=2 //type inferred because variable (constant) defined and set
     val y:Int //type declared (I in Int MUST BE CAPITALIZED)
@@ -74,4 +97,5 @@ fun main(args: Array<String>) {
     conditionals(0)
     println(validTriangle())
     randomMonth()
+    arrays()
 }
