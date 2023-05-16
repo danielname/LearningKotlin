@@ -1,3 +1,5 @@
+import kotlin.math.floor
+
 fun myName(arg: String){
     println("**********\n* $arg *\n**********")
 }
@@ -42,6 +44,25 @@ fun validTriangle(): Boolean {
     } else false
 }
 
+fun randomMonth(){
+    val ranNum = floor(Math.random() * 13 + 1).toInt()
+    when(ranNum){
+        1-> println("January")
+        2-> println("February")
+        3-> println("March")
+        4-> println("April")
+        5-> println("May")
+        6-> println("June")
+        7-> println("July")
+        8-> println("August")
+        9-> println("September")
+        10-> println("October")
+        11-> println("November")
+        else-> println("December")
+
+    }
+}
+
 fun main(args: Array<String>) {
     val x=2 //type inferred because variable (constant) defined and set
     val y:Int //type declared (I in Int MUST BE CAPITALIZED)
@@ -52,4 +73,5 @@ fun main(args: Array<String>) {
     strings()
     conditionals(0)
     println(validTriangle())
+    randomMonth()
 }
