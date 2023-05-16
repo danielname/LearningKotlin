@@ -25,6 +25,23 @@ fun circle(): Double {
     return (raduis * raduis * Math.PI)
 }
 
+fun conditionals(num:Int){
+    val trueFalse = if (num>1) "true" else "false"
+    println(trueFalse)
+}
+
+fun validTriangle(): Boolean {
+    val sideA = Math.random() * 20
+    val sideB = Math.random() * 20
+    val sideC = Math.random() * 20
+    println("A is $sideA, B is $sideB, C is $sideC")
+    return if (sideA + sideB > sideC){
+        if (sideA + sideC > sideB) {
+            sideB + sideC > sideA
+        } else false
+    } else false
+}
+
 fun main(args: Array<String>) {
     val x=2 //type inferred because variable (constant) defined and set
     val y:Int //type declared (I in Int MUST BE CAPITALIZED)
@@ -33,4 +50,6 @@ fun main(args: Array<String>) {
     println("Hello\nWorld!")
     circle()
     strings()
+    conditionals(0)
+    println(validTriangle())
 }
