@@ -22,9 +22,9 @@ fun strings(){
 }
 
 fun circle(): Double {
-    val raduis = (Math.random() * 10) + 1
-    println(raduis)
-    return (raduis * raduis * Math.PI)
+    val radius = (Math.random() * 10) + 1
+    println(radius)
+    return (radius * radius * Math.PI)
 }
 
 fun conditionals(num:Int){
