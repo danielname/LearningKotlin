@@ -86,6 +86,15 @@ fun arrays(){
 
 }
 
+class Book constructor(title: String, authorName: String, numOfPages: Int){
+
+    init {
+        println("$title is a great book")
+    }
+
+    constructor(title: String):this(title,"Dr. Suess",20)
+}
+
 fun main(args: Array<String>) {
     val x=2 //type inferred because variable (constant) defined and set
     val y:Int //type declared (I in Int MUST BE CAPITALIZED)
@@ -98,4 +107,6 @@ fun main(args: Array<String>) {
     println(validTriangle())
     randomMonth()
     arrays()
+    val book = Book("The Murder of Roger Ackroyd", "Agatha Christie", 200)
+    val cat = Book("The cat in the hat")
 }
