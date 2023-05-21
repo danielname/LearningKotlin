@@ -95,6 +95,9 @@ class Book constructor(title: String, authorName: String, numOfPages: Int){
     constructor(title: String):this(title,"Dr. Suess",20)
 }
 
+/**
+long comments can be written in slash star with double star hi-lighting it
+ */
 fun main(args: Array<String>) {
     val x=2 //type inferred because variable (constant) defined and set
     val y:Int //type declared (I in Int MUST BE CAPITALIZED)
