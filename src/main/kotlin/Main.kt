@@ -30,6 +30,7 @@ fun circle(): Double {
 fun conditionals(num:Int){
     val trueFalse = if (num>1) "true" else "false"
     println(trueFalse)
+    //when (value) is the equivalent to a switch
 }
 
 fun validTriangle(): Boolean {
