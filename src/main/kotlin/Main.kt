@@ -87,16 +87,16 @@ fun arrays(){
 
 }
 
-class Book constructor(title: String, authorName: String, numOfPages: Int){
+class Book constructor(var title: String, var authorName: String, var numOfPages: Int){
 
-    var title: String? = null
-    var authorName: String? = null
-    var numOfPages: Int? = null
+//    var title: String? = null
+//    var authorName: String? = null
+//    var numOfPages: Int? = null
 
     init {
-        this.title = title
-        this.authorName = authorName
-        this.numOfPages = numOfPages
+//        this.title = title
+//        this.authorName = authorName
+//        this.numOfPages = numOfPages
         println("$title is a great book")
     }
 
@@ -120,5 +120,5 @@ fun main(args: Array<String>) {
     arrays()
     val book = Book("The Murder of Roger Ackroyd", "Agatha Christie", 200)
     val cat = Book("The cat in the hat")
-    println("I love ${book.title}")
+    println("I love ${book.authorName}")
 }
